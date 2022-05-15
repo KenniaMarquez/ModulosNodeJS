@@ -1,0 +1,22 @@
+const {Telegraf} = require("telegraf");
+const bot = new Telegraf("5392433482:AAEYyZ_9XFeIDiIHEWxbu4g7z9yP9zWkY-0");
+
+bot.start((ctx)=>{
+    ctx.reply("Programacion ComputacionalIV");
+});
+
+bot.launch();
+
+//COMANDNDO PERSONALIZADO
+
+bot.command(['saludar', 'saludo', 'hola'], (ctx) => {
+    ctx.reply("Buenos dias");
+});
+
+bot.on('sticker', (ctx) =>{
+    ctx.reply("Buen sticker");
+});
+
+//.shorturl.at/qxy29
+
+bot.launch();
